@@ -1,0 +1,17 @@
+.navbar-brand{
+    color:burlywood;
+}
+.my-navbar{
+    background-color: blueviolet;
+}
+.my-link{
+    color:white;
+}
+.my-icone{
+    color:brown
+}
+footer{
+    background-color: blueviolet; 
+    color:white; 
+    margin-top: 5px; 
+}
