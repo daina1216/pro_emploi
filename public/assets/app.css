@@ -15,3 +15,14 @@ footer{
     color:white; 
     margin-top: 5px; 
 }
+
+.btn-prim
+{
+    background-color: blueviolet;
+    color: white;
+}
+
+.btn-prim:hover
+{
+    background-color: rgba(137, 43, 226, 0.378);
+}

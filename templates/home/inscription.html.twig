@@ -1,0 +1,57 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}inscription{% endblock %}
+
+{% block body %}
+
+
+
+<form class="row g-3">
+<div class="row g-3">
+  <div class="col-md-6">
+    <input type="text" class="form-control" placeholder="Nom" aria-label="First name">
+  </div>
+  <div class="col-md-6">
+    <input type="text" class="form-control" placeholder="Prenom" aria-label="Last name">
+  </div>
+</div>
+  <div class="col-md-6">
+    <input type="email" class="form-control" id="inputEmail4" class="form-control" placeholder="Email" aria-label="email">
+  </div>
+  <div class="col-md-6">
+    <input type="password" class="form-control" id="inputPassword4" class="form-control" placeholder="Mot de passe" aria-label="password">
+  </div>
+  <div class="col-12">
+    <input type="text" class="form-control" id="inputAddress" placeholder="Adresse 1">
+  </div>
+  <div class="col-12">
+    <input type="text" class="form-control" id="inputAddress2" placeholder="Adresse 2">
+  </div>
+  <div class="col-md-6">
+    <input type="text" class="form-control" id="inputCity" class="form-control" placeholder="City" aria-label="city">
+  </div>
+  <div class="col-md-4">
+    <select id="inputState" class="form-select">
+      <option selected>statut...</option>
+      <option>informatique</option>
+      <option>Marketing</option>
+      <option>Commercial</option>
+    </select>
+  </div>
+  <div class="col-md-2">
+    <input type="text" class="form-control" id="inputZip" input type="text" class="form-control" placeholder="zip" aria-label="zip">
+  </div>
+  <div class="col-12">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="gridCheck">
+      <label class="form-check-label" for="gridCheck">
+       rester conecter
+      </label>
+    </div>
+  </div>
+  <div class="col-12">
+    <button type="submit" class="btn btn-primary">inscrire</button>
+  </div>
+</form>
+
+{% endblock %}

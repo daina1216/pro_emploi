@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Authentification{% endblock %}
+
+{% block body %}
+
+<div class="row form-control me-3 md-2 mb-3 mt-3">
+    <h3 class="text-center">Bonjour!</h3>
+    <h4 class="text-center">connectez-vous sur Pro_Emploi</h4>
+
+
+    <div class="col-12 offset-md-2 col-md-8">
+        <form>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">Nous ne partagerons jamais votre e-mail avec quelqu'un d'autre.</div>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">rester connectée</label>
+            </div>
+            
+
+            <div class="mb-3 form-check" >
+        <button type="submit" class="btn btn-prim ms-4">Connection <i class="bi bi-box-arrow-in-right"></i></button>
+        <a href="{{ path('app_inscription') }}" class="ms-4">Inscription <i class="bi bi-box-arrow-in-right"></i></a>                
+            </div>
+             
+           
+        </form>
+    </div>
+</div>
+
+{% endblock %}

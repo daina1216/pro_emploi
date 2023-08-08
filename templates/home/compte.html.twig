@@ -1,0 +1,116 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}mon compte{% endblock %}
+
+{% block body %}
+
+<div class="row form-control me-3 md-2 mb-3 mt-3">
+    <h4 class="text-center">Mon Profil</h4>
+
+<div class="input-group mb-3">
+  <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Menu</button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">Tableau de bord</a></li>
+    <li><a class="dropdown-item" href="#">Mes offres sauvegardées</a></li>
+    <li><a class="dropdown-item" href="#">Mes candidatures</a></li>
+    <li><a class="dropdown-item" href="{{ path('app_moncv') }}">Mon cv</a></li>
+    <li><a class="dropdown-item" href="{{ path('app_lettre') }}">Mes lettres de motivation</a></li>
+    <li><a class="dropdown-item" href="{{ path('app_alte') }}">Creer une alerte email</a></li>
+    <li><hr class="dropdown-divider"></li>
+    <li><a class="dropdown-item" href="#">Déconnexion</a></li>
+  </ul>
+  <input type="text" class="form-control" aria-label="Text input with dropdown button">
+</div>
+
+<div class="row mt-3 bg-light">
+    <h5 class="text-center">
+        Vos dernières offres d'emplois
+    </h5>
+
+    <div class="col-6 col-md-4 mb-2">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title" style="color:blueviolet;">Titre de l'annonce</h5>
+                <h6 class="card-subtitle mb-2 text-muted" style="font-style: italic; font-weight:bold;">Nom de l'entreprise</h6>
+                <p class="card-text">
+                    Une description...
+                </p>
+                <a href="#" class="card-link">voir l'offre</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-6 col-md-4 mb-2">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title" style="color:blueviolet;">Titre de l'annonce</h5>
+                <h6 class="card-subtitle mb-2 text-muted" style="font-style: italic; font-weight:bold;">Nom de l'entreprise</h6>
+                <p class="card-text">
+                    Une description...
+                </p>
+                <a href="#" class="card-link">voir l'offre</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-6 col-md-4 mb-2">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title" style="color:blueviolet;">Titre de l'annonce</h5>
+                <h6 class="card-subtitle mb-2 text-muted" style="font-style: italic; font-weight:bold;">Nom de l'entreprise</h6>
+                <p class="card-text">
+                    Une description...
+                </p>
+                <a href="#" class="card-link">voir l'offre</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-6 col-md-4 mb-2">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title" style="color:blueviolet;">Titre de l'annonce</h5>
+                <h6 class="card-subtitle mb-2 text-muted" style="font-style: italic; font-weight:bold;">Nom de l'entreprise</h6>
+                <p class="card-text">
+                    Une description...
+                </p>
+                <a href="#" class="card-link">voir l'offre</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-6 col-md-4 mb-2">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title" style="color:blueviolet;">Titre de l'annonce</h5>
+                <h6 class="card-subtitle mb-2 text-muted" style="font-style: italic; font-weight:bold;">Nom de l'entreprise</h6>
+                <p class="card-text">
+                    Une description...
+                </p>
+                <a href="#" class="card-link">voir l'offre</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-6 col-md-4 mb-2">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title" style="color:blueviolet;">Titre de l'annonce</h5>
+                <h6 class="card-subtitle mb-2 text-muted" style="font-style: italic; font-weight:bold;">Nom de l'entreprise</h6>
+                <p class="card-text">
+                    Une description...
+                </p>
+                <a href="#" class="card-link">voir l'offre</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center">
+        <a href="#" title="voir les dernières offres">
+            <button type="button" class="btn" style="border-radius: 30px; background-color: blueviolet; color:white;">VOIR PLUS</button>
+        </a>
+    </div>
+</div>
+
+</div>
+{% endblock %}
